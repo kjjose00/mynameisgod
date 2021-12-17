@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+.wh{
+    
+    height: 100vh;
+    background-color:white;
+    display: grid;
+    place-items: center;
+    background-image: url(christ.jpg);
+    background-size: cover;
+   
+
+}
+.wh h1{
+    font-size: 30px;
+    font-family: 'Readex Pro', sans-serif;
+    
+}
+.wh2{
+    height:100vh;
+    background-color: white;
+}
+.brand_style{
+    font-size: 65px;
+    color: tomato;
+    font-family: 'Readex Pro', sans-serif;
+}
+.login{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    font-family: 'Readex Pro', sans-serif;
+}
+.log_form{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(219, 205, 205);
+    border-radius: 20px;
+    font-family: 'Readex Pro', sans-serif;
+}
