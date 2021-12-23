@@ -41,3 +41,13 @@
     border-radius: 20px;
     font-family: 'Readex Pro', sans-serif;
 }
+@media (max-width: 470px) {
+    .res{
+     display: none;
+    }
+    .res1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+  }
