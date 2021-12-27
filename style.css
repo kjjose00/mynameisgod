@@ -75,6 +75,44 @@
 .res4 a{
     color: brown;
 }
+.res5{
+    width: 60vw;
+    height: 40vh;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+   
+   
+  
+
+}
+.r1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(240, 223, 223);
+    text-align: center;
+    position: relative;
+  
+  
+   
+    
+    
+    
+}
+.r1 i{
+    position:absolute;
+    top:30%;
+    left:30%;
+}
+.post{
+    width: 60vw;
+    height: 40vh;
+   
+    margin: auto;
+}
+
+
 @media (max-width: 470px) {
     .res{
      display: none;
