@@ -100,46 +100,71 @@
 
             <p>
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                  Toggle width collapse
+                Select Verses To Copy
                 </button>
+                <button class="btn btn-primary">Select All</button>
+                <button class="btn btn-primary">Copy</button>
               </p>
               <div class="row">
                 <div class="col-lg-12 collapse collapse-horizontal" id="collapseWidthExample">
                   
-                  
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(1)" id="sl1">1</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(2)" id="sl2">2</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(3)" id="sl3">3</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(4)" id="sl4">4</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(5)" id="sl5">5</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(6)" id="sl6">6</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(7)" id="sl7">7</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(8)" id="sl8">8</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(9)" id="sl9">9</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(10)" id="sl10">10</a>
 
-                  <script>
-                      
-                      
-                      function created(){
-                          for(var i=1;i<=31;i++){
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(11)" id="sl11">11</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(12)" id="sl12">12</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(13)" id="sl13">13</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(14)" id="sl14">14</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(15)" id="sl15">15</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(16)" id="sl16">16</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(17)" id="sl17">17</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(18)" id="sl18">18</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(19)" id="sl19">19</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(20)" id="sl20">20</a>
 
-                              var a=document.createElement("BUTTON");
-                              a.innerHTML=i;
-                              a.id=`sl${i}`;
-                              a.className="btn-outline-primary btn";
-                              
-                              
-                              
-                              console.log(a.id);
-                              document.getElementById("collapseWidthExample").appendChild(a);
-                              console.log(a.active);
-                              var aid=a.id
-                              a.onclick=function(){
-                                  d=document.getElementById(aid);
-                                  d.style.backgroundColor="blue";
-                              }
-                             
-                            
-                              
-                          }       
-                          
-                      }
-                      created();
-                  </script>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(21)" id="sl21">21</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(22)" id="sl22">22</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(23)" id="sl23">23</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(24)" id="sl24">24</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(25)" id="sl25">25</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(26)" id="sl26">26</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(27)" id="sl27">27</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(28)" id="sl28">28</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(29)" id="sl29">29</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(30)" id="sl30">30</a>
+                    <a href="#" class="btn btn-outline-danger" onclick="change_color(31)" id="sl31">31</a><br>
+                    <script>
+                        function change_color(n){
+                           console.log(n);
+                           console.log(typeof(n));
+                           var s=String(n);
+                           console.log(typeof(s));
+                           var d=document.getElementById(`sl${n}`)
+                           if(d.style.backgroundColor==="blue" && d.style.color==="white"){
+                               d.style.backgroundColor="";
+                               d.style.color="";
+                            }else
+                            {
+                               d.style.backgroundColor="blue";
+                               d.style.color="white";
+
+                           }
+                        }
+                    </script>  
+                      
+                     
                   
                 </div>
               </div>
+              <br>
             
             
             <div class="row">
