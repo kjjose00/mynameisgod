@@ -42,6 +42,16 @@
             justify-content: space-around;
             align-items: center;
         }
+        @media (max-width:400px){
+            .container{
+                width: 100vw;
+                margin-top: 0;
+                height: 100vh;
+            }
+            .chat-body{
+                height: 88vh;
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,7 +111,7 @@
     </div>
 </div><hr>
 <div class="chat-msg">
-    <input type="text">
+    <textarea name="" id="" cols="30" rows="1" style="border: none;outline: none;background-color:transparent;resize: none;background-color: darkblue;color:white;padding: 5px 15px;border-radius: 10px;"></textarea> 
     <span style="width: 30px;height: 30px;border-radius: 50%;background-color:rgb(185, 204, 18);display: grid;place-items: center;"><i class="fas fa-paperclip"></i></span>
     <span style="width: 30px;height: 30px;border-radius: 50%;background-color:rgb(197, 235, 28);display: grid;place-items: center;"><i class="fas fa-arrow-right"></i></span>
 </div>
